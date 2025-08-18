@@ -5,113 +5,27 @@ function toggleMenu() {
     icon.classList.toggle("open");
 }
 
-
-// Get the button and the first box
-// Select all elements with the class 'sidebar'
+// Select all sidebar buttons
 const buttons = document.getElementsByClassName('sidebar');
 
-// Select the element with the id 'profile'
-const firstBox = document.querySelector('#profile');
+// IDs of all boxes you want to shift
+const boxIds = ['profile', 'about', 'experience', 'contact', 'project', 'education'];
 
-// Iterate over each button in the 'sidebar' class to add event listeners
+// Convert IDs to actual DOM elements
+const boxes = boxIds.map(id => document.querySelector(`#${id}`));
+
+// Iterate over sidebar buttons
 for (let i = 0; i < buttons.length; i++) {
-    // Add event listener for mouseover (button hover)
     buttons[i].addEventListener('mouseover', function () {
-        firstBox.style.marginLeft = '300px'; // Apply margin-left to the first box when hovering over the button
+        boxes.forEach(box => {
+            if (box) box.style.marginLeft = '300px';
+        });
     });
 
-    // Add event listener for mouseout (button unhover)
     buttons[i].addEventListener('mouseout', function () {
-        firstBox.style.marginLeft = '150px'; // Reset margin-left when not hovering over the button
-    });
-}
-// Select all elements with the class 'sidebar'
-
-// Select the element with the id 'profile'
-const firstBox1 = document.querySelector('#about');
-
-// Iterate over each button in the 'sidebar' class to add event listeners
-for (let i = 0; i < buttons.length; i++) {
-    // Add event listener for mouseover (button hover)
-    buttons[i].addEventListener('mouseover', function () {
-        firstBox1.style.marginLeft = '300px'; // Apply margin-left to the first box when hovering over the button
-    });
-
-    // Add event listener for mouseout (button unhover)
-    buttons[i].addEventListener('mouseout', function () {
-        firstBox1.style.marginLeft = '150px'; // Reset margin-left when not hovering over the button
-    });
-}
-
-// Select all elements with the class 'sidebar'
-
-// Select the element with the id 'profile'
-const firstBox2 = document.querySelector('#experience');
-
-// Iterate over each button in the 'sidebar' class to add event listeners
-for (let i = 0; i < buttons.length; i++) {
-    // Add event listener for mouseover (button hover)
-    buttons[i].addEventListener('mouseover', function () {
-        firstBox2.style.marginLeft = '300px'; // Apply margin-left to the first box when hovering over the button
-    });
-
-    // Add event listener for mouseout (button unhover)
-    buttons[i].addEventListener('mouseout', function () {
-        firstBox2.style.marginLeft = '150px'; // Reset margin-left when not hovering over the button
-    });
-}
-
-// Select all elements with the class 'sidebar'
-
-// Select the element with the id 'profile'
-const firstBox3 = document.querySelector('#contact');
-
-// Iterate over each button in the 'sidebar' class to add event listeners
-for (let i = 0; i < buttons.length; i++) {
-    // Add event listener for mouseover (button hover)
-    buttons[i].addEventListener('mouseover', function () {
-        firstBox3.style.marginLeft = '300px'; // Apply margin-left to the first box when hovering over the button
-    });
-
-    // Add event listener for mouseout (button unhover)
-    buttons[i].addEventListener('mouseout', function () {
-        firstBox3.style.marginLeft = '150px'; // Reset margin-left when not hovering over the button
-    });
-}
-
-// Select all elements with the class 'sidebar'
-
-// Select the element with the id 'profile'
-const firstBox4 = document.querySelector('#project');
-
-// Iterate over each button in the 'sidebar' class to add event listeners
-for (let i = 0; i < buttons.length; i++) {
-    // Add event listener for mouseover (button hover)
-    buttons[i].addEventListener('mouseover', function () {
-        firstBox4.style.marginLeft = '300px'; // Apply margin-left to the first box when hovering over the button
-    });
-
-    // Add event listener for mouseout (button unhover)
-    buttons[i].addEventListener('mouseout', function () {
-        firstBox4.style.marginLeft = '150px'; // Reset margin-left when not hovering over the button
-    });
-}
-
-// Select all elements with the class 'sidebar'
-
-// Select the element with the id 'profile'
-const firstBox6 = document.querySelector('#education');
-
-// Iterate over each button in the 'sidebar' class to add event listeners
-for (let i = 0; i < buttons.length; i++) {
-    // Add event listener for mouseover (button hover)
-    buttons[i].addEventListener('mouseover', function () {
-        firstBox6.style.marginLeft = '300px'; // Apply margin-left to the first box when hovering over the button
-    });
-
-    // Add event listener for mouseout (button unhover)
-    buttons[i].addEventListener('mouseout', function () {
-        firstBox6.style.marginLeft = '150px'; // Reset margin-left when not hovering over the button
+        boxes.forEach(box => {
+            if (box) box.style.marginLeft = '150px';
+        });
     });
 }
 
@@ -126,7 +40,7 @@ document.getElementById('contactForm').addEventListener('submit', function (e) {
     }, 4000);
 });
 
-
+// Loading screen functionality
 document.addEventListener("DOMContentLoaded", () => {
     const isFirstVisit = localStorage.getItem("firstVisit") !== "false";
     const loadingScreen = document.querySelector(".loading-screen");
