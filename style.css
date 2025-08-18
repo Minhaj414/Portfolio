@@ -1378,13 +1378,14 @@ footer p {
     transform: translateY(-50%);
     background: #4f52ba;
     transform-origin: right;
-    transition-delay: 0.2s;
+    transition-delay: 0s;
 }
 
 .sidebar:hover .sidebar-links .menu-separator {
-    /* transition-delay: 0s; */
+    transition-delay: 0s;
     transform: scaleX(0);
 }
+
 
 .sidebar-links {
     list-style: none;
@@ -1499,3 +1500,11 @@ footer p {
     }
 }
 
+#profile,
+#about,
+#experience,
+#contact,
+#project,
+#education {
+    transition: margin-left 0.5s ease; /* Smooth move effect */
+}
