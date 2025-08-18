@@ -5,31 +5,28 @@ function toggleMenu() {
     icon.classList.toggle("open");
 }
 
-// Select all sidebar buttons
+// Sidebar hover effect
 const buttons = document.getElementsByClassName('sidebar');
 
-// IDs of all boxes you want to shift
+// IDs of all sections
 const boxIds = ['profile', 'about', 'experience', 'contact', 'project', 'education'];
-
-// Convert IDs to actual DOM elements
 const boxes = boxIds.map(id => document.querySelector(`#${id}`));
 
-// Iterate over sidebar buttons
 for (let i = 0; i < buttons.length; i++) {
-    buttons[i].addEventListener('mouseover', function () {
+    buttons[i].addEventListener('mouseover', () => {
         boxes.forEach(box => {
             if (box) box.style.marginLeft = '300px';
         });
     });
 
-    buttons[i].addEventListener('mouseout', function () {
+    buttons[i].addEventListener('mouseout', () => {
         boxes.forEach(box => {
             if (box) box.style.marginLeft = '150px';
         });
     });
 }
 
-// Contact form functionality
+// Contact form
 document.getElementById('contactForm').addEventListener('submit', function (e) {
     e.preventDefault();
     alert('Your message has been sent!');
@@ -40,7 +37,7 @@ document.getElementById('contactForm').addEventListener('submit', function (e) {
     }, 4000);
 });
 
-// Loading screen functionality
+// Loading screen
 document.addEventListener("DOMContentLoaded", () => {
     const isFirstVisit = localStorage.getItem("firstVisit") !== "false";
     const loadingScreen = document.querySelector(".loading-screen");
@@ -51,10 +48,31 @@ document.addEventListener("DOMContentLoaded", () => {
         setTimeout(() => {
             loadingScreen.style.display = "none";
             mainContent.classList.remove("hidden");
-        }, 3000); // Delay for 3 seconds
+        }, 3000); 
     } else {
-        // Skip loading animation for returning users
         loadingScreen.style.display = "none";
         mainContent.classList.remove("hidden");
     }
+});
+// Smooth scroll for sidebar links
+const sidebarLinks = document.querySelectorAll('.sidebar a');
+
+sidebarLinks.forEach(link => {
+    link.addEventListener('click', (e) => {
+        e.preventDefault();
+        const targetId = link.getAttribute('href');
+        const targetSection = document.querySelector(targetId);
+        targetSection.scrollIntoView({ behavior: 'smooth' });
+    });
+});
+// Smooth scroll for footer links
+const footerLinks = document.querySelectorAll('footer a');
+
+footerLinks.forEach(link => {
+    link.addEventListener('click', (e) => {
+        e.preventDefault();
+        const targetId = link.getAttribute('href');
+        const targetSection = document.querySelector(targetId);
+        targetSection.scrollIntoView({ behavior: 'smooth' });
+    });
 });
