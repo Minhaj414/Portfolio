@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="image/icon Logo.jpg">
+
+    <title>Mohamed Minhaj</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">
+            <h1><span style="color:  #066f9c;">Welcome </span> to My Portfolio</h1>
+        </div>
+
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="menu-links">
+            <div class="hamImg">
+                <div>
+
+                    <i class="fa-solid fa-fingerprint fa-2x" style="color: #000000;"></i>
+                    <span style="color: #066f9c;" class="y1">Mohamed Minhaj </span>
+                    <span style="color: #066f9c;" class="y2">MINHAJ</span>
+                </div>
+            </div>
+
+            <div class="hamDiv">
+                <ul class="hamUl">
+                    <li class="abt-11">
+                        <div class="hamLogo">
+                            <i class="fa-solid fa-house" style="color: #000000;"></i>
+
+                        </div>
+                        <a href="#profile" class="hamA" onclick="toggleMenu()">Home</a>
+                    </li>
+                    <li class="abt-12">
+                        <div class="hamLogo">
+                            <i class="fa-solid fa-user" style="color: #000000;"></i>
+
+                        </div>
+                        <a href="#about" class="hamA" onclick="toggleMenu()">About</a>
+                    </li>
+                    <li class="abt-13">
+                        <div class="hamLogo">
+                            <i class="fa-solid fa-pen-nib" style="color: #000000;"></i>
+
+                        </div>
+                        <a href="#education" class="hamA" onclick="toggleMenu()">Education</a>
+                    </li>
+                    <li class="abt-14">
+                        <div class="hamLogo">
+                            <i class="fa-solid fa-atom" style="color: #000000;"></i>
+
+                        </div>
+                        <a href="#blog" class="hamA" onclick="toggleMenu()">Blog</a>
+                    </li>
+                    <li class="abt-15">
+                        <div class="hamLogo">
+                            <i class="fa-solid fa-phone" style="color: #000000;"></i>
+
+                        </div>
+                        <a href="#contact" class="hamA" onclick="toggleMenu()">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </nav>
+
+
+    <aside class="sidebar" onmouseover="MouseEvent()">
+        <div class="sidebar-header">
+            <img src="image/icon Logo.jpg" alt="logo" class="icon" />
+            <h2><span style="color: goldenrod;">Minhaj </span><span style="color:  #066f9c"> Mohamed</span> </h2>
+
+        </div>
+        <ul class="sidebar-links">
+            <h4>
+                <span> Menu</span>
+                <div class="menu-separator"></div>
+            </h4>
+            <li class="abt-btn" data-target="profile">
+                <a href="#profile">
+                    <i class="fa-solid fa-house"></i>
+                    <span class="material"> Home </span></a>
+            </li>
+            <li class="abt-btn" data-target="about">
+                <a href="#about">
+                    <i class="fa-solid fa-user"></i>
+                    <span class="material"> About </span></a>
+            </li>
+            <li class="abt-btn" data-target="education">
+                <a href="#education">
+                    <i class="fa-solid fa-pen-nib"></i>
+                    <span class="material">Education </span></a>
+            </li>
+            <li class="abt-btn" data-target="experience">
+                <a href="#blog">
+                    <i class="fa-solid fa-atom"></i>
+                    <span class="material"> Blog </span></a>
+            </li>
+            <li class="abt-btn" data-target="contact">
+                <a href="#contact">
+                    <i class="fa-solid fa-phone"></i>
+                    <span class="material"> Contact </span></a>
+            </li>
+
+
+        </ul>
+        <!-- <div class="user-account">
+            <div class="user-profile">
+                <i class="fa-solid fa-fingerprint fa-2x"></i>
+                <div class="user-detail">
+                    <h3 class="me">MINHAJ</h3>
+                    <span>Software Engineer</span>
+                </div>
+            </div>
+        </div> -->
+    </aside>
+
+    <section id="profile" class="active">
+
+
+        <div class="section__pic-container">
+            <img src="image/profile.png" alt="Minhaj">
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">Hello,I'm</p>
+            <h1 class="title"><span style="color: gold;">MINHAJ</span> MOHAMED</h1>
+            <p class="section__text__P2"> Developer <span class="line">|</span> Designer <span class="line">|</span>
+                Student</p>
+            <p class="section__text__P2">Educator <span class="line">|</span> Creator </p>
+
+            <div class="btn-container">
+                <button class="btn btn-color-1" onclick="location.href='./#contact'">
+                    Contact Info
+                </button>
+            </div>
+            <div id="socials-container">
+                <i class="fa-brands fa-linkedin fa-2x"
+                    onclick="location.href='https://www.linkedin.com/in/mohamed-minhaj-26735b37b'" title="LinkedIn"></i>
+                <i class="fa-brands fa-instagram fa-2x"
+                    onclick="location.href='https://www.instagram.com/minhajmjm?igsh=Mzl1M3AzbHd6OXlw'"
+                    title="Instagram"></i>
+                <i class="fa-brands fa-github fa-2x" onclick="location.href='https://github.com/Minhaj414'"
+                    title="GitHub"></i>
+                <i class="fa-brands fa-medium fa-2x" onclick="location.href='https://medium.com/@mohamedminhaj754'"
+                    title="Medium"></i>
+
+            </div>
+        </div>
+    </section>
+
+
+    <section id="about" class="section">
+        <p class="section__text__p1">Get to Know more</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+            <div class="section__pic-container">
+                <img src="image/profile.png" alt="Profile pic" class="about-pic">
+            </div>
+            <div class="about-details-container">
+                <div class="details">
+                    <h2 class="h2"><span class="s3">|</span> <span class="sa2">A little bit</span> about me</h2>
+                    <div class="abt">
+
+                        <h3>I am currently pursuing my <span class="sa2">BSc Hons in Information Technology & Management
+                            </span>at the University
+                            of Moratuwa.</h3>
+
+                        <h3>I am passionate about applying my academic knowledge to real-world projects, continuously
+                            learning
+                            and growing in the field of software development and machine learning</h3>
+                    </div>
+                </div>
+                <div class="details">
+
+                    <h2 class="h2"><span class="s3">|</span> <span class="sa2"> Personal </span> interests</h2>
+                    <div class="abt2">
+                        <div class="cardMain">
+                            <div class="cardName">
+                                <div>
+                                    <i class="fa-solid fa-code fa-2x" style="color: #ffffff;"></i>
+                                </div>
+                            </div>
+                            <div class="cardDetails">
+                                <h3>Web Development</h3>
+                                <p class="pc">Exploring different genres and improving my skills.</p>
+                            </div>
+                        </div>
+                        <div class="cardMain">
+                            <div class="cardName">
+                                <div>
+                                    <i class="fa-solid fa-pager fa-2x" style="color: #ffffff;"></i>
+                                </div>
+                            </div>
+                            <div class="cardDetails">
+                                <h3>Frontend Development</h3>
+                                <p class="pc">I focus on creating interactive, responsive, and visually appealing user
+                                    interfaces.</p>
+                            </div>
+                        </div>
+                        <div class="cardMain">
+                            <div class="cardName">
+                                <div>
+                                    <i class="fa-solid fa-palette fa-2x" style="color: #ffffff;"></i>
+                                </div>
+                            </div>
+                            <div class="cardDetails">
+                                <h3>Design</h3>
+                                <p class="pc">I bring designs to life with interactive and responsive user interfaces.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="cardMain">
+                            <div class="cardName">
+                                <div>
+                                    <i class="fa-solid fa-paintbrush fa-2x" style="color: #ffffff;"></i>
+                                </div>
+                            </div>
+                            <div class="cardDetails">
+                                <h3>UX design</h3>
+                                <p class="pc">Studying user experience principles.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        </div>
+    </section>
+
+    <section id="education" class="section">
+        <p class="section__text__p1">Journey of</p>
+        <h1 class="title">Education</h1>
+        <div class="eduDiv">
+            <ul class="eduUl">
+                <li class="shcool">
+                    <header>
+                        <div class="eduHeader">
+                            <h1 class="scl"><span class="s3">|</span><span class="speace">School
+                                    Level</span>
+                                Education</h1>
+                            <div class="headDiv">
+                                <i class="fa-solid fa-school-flag"></i>
+                                <span class="iconName">BT/BC/KATTANKUDY CENTRAL COLLEGE</span>
+                                <h3 class="eduDetails">Completed My O/L and A/L </h3>
+                                <div class="date">
+                                    2010-2024
+                                </div>
+                            </div>
+                        </div>
+                        <span class="cricle"></span>
+                    </header>
+
+                    <div class="result">
+                        <div class="ol">
+                            <ul class="olUl">
+                                <h3 style="text-decoration: underline;">OL</h3>
+                                <p>Mathematics- <span class="mark">A</span></p>
+                                <p>Science- <span class="mark">A</span></p>
+                                <p>ICT- <span class="mark">A</span></p>
+                                <p>Business Studies- <span class="mark">A</span></p>
+                                <p>App.Tamil.Lit- <span class="mark">A</span></p>
+                                <p>Islam- <span class="mark">A</span></p>
+                                <p>Tamil- <span class="mark">B</span></p>
+                                <p>History- <span class="mark">B</span></p>
+                                <p>English- <span class="mark">B</span></p>
+
+                            </ul>
+                        </div>
+                        <div class="al">
+                            <ul class="olUl">
+                                <h3 style="text-decoration: underline;">AL</h3>
+                                <p>GIT- <span class="mark">A</span></p>
+                                <p>Accounts- <span class="mark">A</span></p>
+                                <p>Busiess- <span class="mark">A</span></p>
+                                <p>ICT- <span class="mark">A</span></p>
+                                <p>Z-score <span class="mark">1.9093</span></p>
+
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li class="shcool">
+                    <header>
+                        <div class="eduHeader">
+                            <h1 class="scl"><span class="s3">|</span><span class="speace">Web</span>
+                                Development</h1>
+                            <div class="headDiv">
+                                <i class="fa-solid fa-laptop-code"></i> <span class="iconName">Self Learning</span>
+                                <div class="date">
+                                    2024 Mar
+                                </div>
+                                <div class=" web">
+                                    <p class="">Passionate self-learner in web development, exploring cutting-edge
+                                        technologies
+                                        to create interactive and responsive web experiences. Proficient in HTML, CSS,
+                                        and JavaScript, with hands-on experience in React.js for building modern user
+                                        interfaces. Dedicated to expanding knowledge through online tutorials, projects,
+                                        and continuous practice. Committed to turning innovative ideas into functional
+                                        solutions while staying updated with industry trends. My self-learning journey
+                                        reflects a strong work ethic and enthusiasm for mastering web technologies.</p>
+
+                                </div>
+                            </div>
+                        </div>
+                        <span class="cricle"></span>
+
+                    </header>
+                </li>
+                <li class="shcool">
+                    <header>
+                        <div class="eduHeader">
+                            <h1 class="scl"><span class="s3">|</span><span class="speace">BSc(Hons) </span>
+                                in Information Technology and Management</h1>
+                            <div class="headDiv">
+                                <i class="fa-solid fa-building"></i> <span class="iconName">University of
+                                    Moratuwa</span>
+                                <div class="date">
+                                    2025 May
+                                </div>
+                                <div class=" web">
+                                    <p class="">Earned a BSc(Hons) degree in Information Technology and Management,
+                                        focusing on
+                                        algorithms, data structures, software engineering, and web development. Gained
+                                        hands-on experience through various programming projects and boot camps.</p>
+
+                                </div>
+                            </div>
+                        </div>
+                    </header>
+                    <span class="cricle"></span>
+
+                </li>
+            </ul>
+
+
+
+        </div>
+
+        <div class="last"></div>
+
+    </section>
+
+
+
+    <section id="experience" class="section">
+        <!-- <p class="section__text__p1">Explore My</p>
+        <h1 class="title">Experience</h1>
+        <div class="experience-details-container">
+            <div class="eduAni">
+                <div class="edu1">
+                    <div class="aniRound"></div>
+                    <h1><span class="s2">Web</span> Development</h1>
+                    <h4 class="eduNoAbt">I can bring best ideas into Web!!</h4>
+
+                </div>
+                <div class="edu2">
+                    <div class="aniRound"></div>
+                    <h1><span class="s2">Database</span> Management</h1>
+                    <h4 class="eduNoAbt">I cabn handle your data effciently and effectively</h4>
+
+                </div>
+                <div class="edu3">
+                    <div class="aniRound"></div>
+                    <h1><span class="s2">App</span> creation</h1>
+                    <h4 class="eduNoAbt">I can make creative and innovative app!</h4>
+
+                </div>
+                <div class="edu4">
+                    <div class="aniRound"></div>
+                    <h1><span class="s2">API</span>s</h1>
+                    <h4 class="eduNoAbt">connect with other site effectively</h4>
+
+                </div>
+                <div class="edu5">
+                    <div class="aniRound"></div>
+                    <h1><span class="s2"></span>More</h1>
+                    <h4 class="eduNoAbt">There are more to explore!!</h4>
+
+                </div> -->
+
+        <!-- </div> -->
+
+        <div class="eduSkill">
+            <h2><span class="s3">|</span>SKILLS</h2>
+            <div class="skills">
+
+                <div class="skillDiv">
+                    <div class="rount">
+                    </div>
+                    <div class="skillBox">
+                        <div>
+                            <h2 class="slillText"><span class="s4">|</span>HTML</h2>
+                        </div>
+                        <div class="skillBar" style="--skill-level:80%"></div>
+                    </div>
+                </div>
+                <div class="skillDiv">
+                    <div class="rount">
+                    </div>
+                    <div class="skillBox">
+                        <div>
+                            <h2 class="slillText"><span class="s4">|</span>CSS</h2>
+                        </div>
+                        <div class="skillBar" style="--skill-level:50%"></div>
+                    </div>
+                </div>
+                <div class="skillDiv">
+                    <div class="rount">
+                    </div>
+                    <div class="skillBox">
+                        <div>
+                            <h2 class="slillText"><span class="s4">|</span>JavaScript</h2>
+                        </div>
+                        <div class="skillBar" style="--skill-level:30%"></div>
+                    </div>
+                </div>
+
+                <div class="skillDiv">
+                    <div class="rount">
+                    </div>
+                    <div class="skillBox">
+                        <div>
+                            <h2 class="slillText"><span class="s4">|</span>C</h2>
+                        </div>
+                        <div class="skillBar" style="--skill-level:50%"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="language">
+            <h2><span class="s3">|</span>Language</h2>
+            <div class="lanBox">
+                <div class="english">
+                    <div class="round"></div>
+                    <div>
+                        <h3><span class="s4">|</span>ENGLISH</h3>
+                        <p>Native speaker with excellent communication and writing skills</p>
+                    </div>
+                </div>
+                <div class="tamil">
+                    <div class="round"></div>
+                    <div>
+                        <h3><span class="s4">|</span>TAMIL</h3>
+                        <p>active speaker with excellent communication and writing skills..</p>
+                    </div>
+                </div>
+                <div class="arabic">
+                    <div class="round"></div>
+                    <div>
+                        <h3><span class="s4">|</span>ARABIC</h3>
+                        <p>I can read Arabic words, but their meanings remain unclear and fascinating.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="project">
+                <h2><span class="s3">|</span>Project</h2>
+                <p>Explore my projects</p>
+                <div class="projectEx">
+                    <div class="pj1">
+                        <div class="pImg">
+                            <img src="image/p1 (4).png" alt="">
+                        </div>
+                        <h4>Portfolio</h4>
+                        <p class="pj-pr">This project showcases my foundational skills in web development using HTML,
+                            CSS, and JavaScript. It includes a fully responsive webpage with interactive elements that
+                            adapt seamlessly across different devices and screen sizes.</p>
+
+                    </div>
+                    <div class="pj2">
+                        <div class="pImg">
+                            <img src="image/p1 (1).png" alt="">
+                        </div>
+                        <h4> Life Advoicer</h4>
+                        <p class="pj-pr">Built with React.js and Vite.js, this project is a modern advice generator
+                            website that fetches random pieces of advice from an API. It highlights my ability to create
+                            dynamic and user-friendly interfaces while integrating third-party services</p>
+
+
+                    </div>
+                    <div class="pj3">
+                        <div class="pImg">
+                            <img src="image/p1 (2).png" alt="">
+                        </div>
+                        <h4>Qr Code Maker</h4>
+                        <p class="pj-pr">This project demonstrates my expertise in React.js and Vite.js to develop a
+                            tool that generates QR codes based on user input. It features a clean, intuitive design and
+                            emphasizes practical utility and efficiency.</p>
+
+
+                    </div>
+                    <div class="pj4">
+                        <div class="pImg">
+                            <img src="image/p1 (3).png " alt="">
+                        </div>
+                        <h4>About Cart Maker</h4>
+                        <p class="pj-pr">A React.js and Vite.js project where I created a personal card generator. This
+                            tool allows users to input details like name, profession, and contact information to
+                            generate an aesthetically pleasing, CV-style card. It reflects my ability to create
+                            personalized and functional design solutions.</p>
+
+
+
+                    </div>
+                </div>
+            </div> -->
+        <!-- </div> -->
+         <section class="section" id="blog">
+        <div class="language">
+            <h1 class="title" style="text-align: center;">Blog</h1>
+            <p class="section__text__p1" style="text-align: center;">Check out my latest posts and articles :-  </p>
+            <div class="blog-list">
+                <article class="blog-card">
+                    <div class="blog-content">
+                        <h2 class="blog-title">1. How to Design a Web Page Using CSS Flex Properties</h2>
+                        <p class="blog-desc">A step-by-step guide to mastering CSS Flexbox for responsive layouts. Learn
+                            how to create modern, flexible web pages with practical examples and tips.</p>
+                            <img src="image/flexBox.jpg" alt="Blog Post 1" class="blog-img" width="200px" style="border-radius: 10px;">
+                        
+                        <div class="btn-container">
+                <button class="btn btn-color-1">
+                    <a class="blog-link"
+                            href="https://medium.com/@mohamedminhaj754/how-to-design-a-web-page-using-css-flex-properties-3919a1bcac7b"
+                            target="_blank" rel="noopener" style="text-decoration: none; color: white;">Read More</a>
+                </button>
+            </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+    </section>
+
+    <section id="contact" class="section">
+        <p class="section__text__p1">Don't hesitate to</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+            <article class="contectArticle">
+                <h1><span class="s3">|</span><span class="s2">Sent me</span> a message</h1>
+                <form id="contactForm" autocomplete="off">
+                    <div class="contItem">
+                        <div class="contDetails contDetails1">
+
+                            <span class="icons icons1">
+                                <div>
+                                    <i class="fa-solid fa-signature" style="color: #000000;"></i>
+                                </div>
+                            </span>
+                            <input type="text" placeholder="Name *" class="input in1" required aria-required="true">
+
+                        </div>
+
+                        <div class="contDetails contDetails2">
+                            <span class="icons">
+                                <div>
+                                    <i class="fa-solid fa-envelope" style="color: #000000;"></i>
+                                </div>
+                            </span>
+                            <input type="text" placeholder="E-Mail *" class="input" required aria-required="true" 
+                                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" title="Please enter a valid email address" >
+                        </div>
+
+                        <div class="contDetails contDetails3">
+                            <span class="icons iconsLast">
+                                <div>
+                                    <i class="fa-solid fa-tag" style="color: #000000;"></i>
+                                </div>
+                            </span>
+                            <input type="text" placeholder="Subject *" class="input in3" required aria-required="true">
+                        </div>
+
+                        <div class="contDetails contDetails4">
+                            <input type="text" placeholder="Message *" class="msg" required aria-required="true">
+                        </div>
+
+
+            </article>
+            <div class="conBtn">
+                <button>Send Message</button>
+            </div>
+            <div class="success-message" id="successMessage" style="font-size: larger;">Thank you! Your message has been
+                submitted.</div>
+        </div>
+        </form>
+
+        <div class="otherContact">
+            <div class="otherConInfo">
+                <h1><span class="s3">|</span><span class="s2">Or if you </span> prefer...</h1>
+                <div class="otherCon">
+
+                    <div class="otherCon1">
+                        <div class="otherConIcon">
+                            <div>
+                                <i class="fa-solid fa-phone fa-2x" style="color: #ffffff;"></i>
+                            </div>
+                        </div>
+                        <div class="otherConDetails">
+                            <h2>Phone</h2>
+                            <p onclick="window.location.href='https://#'">+94754568790</p>
+                        </div>
+                    </div>
+
+                    <div class="otherCon1">
+                        <div class="otherConIcon">
+                            <div>
+                                <i class="fa-solid fa-envelope fa-2x" style="color: #ffffff;"></i>
+                            </div>
+                        </div>
+                        <div class="otherConDetails">
+                            <h2>Email</h2>
+                            <p onclick="window.location.href='mailto:mohamedminhaj008@gmail.com'">
+                                mohamedminhaj008@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="otherCon1">
+                        <div class="otherConIcon">
+                            <div>
+                                <i class="fa-brands fa-github fa-2x" style="color: #ffffff;"></i>
+                            </div>
+                        </div>
+                        <div class="otherConDetails">
+                            <h2>GitHub</h2>
+                            <p onclick="location.href='https:#'">
+                                Mohamed Minhaj</p>
+                        </div>
+                    </div>
+
+                    <div class="otherCon1">
+                        <div class="otherConIcon">
+                            <div>
+                                <i class="fa-brands fa-linkedin fa-2x" style="color: #ffffff;"></i>
+                            </div>
+                        </div>
+                        <div class="otherConDetails">
+                            <h2>Linkedin</h2>
+                            <p onclick="location.href='https:#'">
+                                Mohamed Minhaj</p>
+                        </div>
+                    </div>
+                    <div class="otherCon1">
+                        <div class="otherConIcon">
+                            <div>
+                                <i class="fa-brands fa-instagram fa-2x" style="color: #ffffff;"></i>
+                            </div>
+                        </div>
+                        <div class="otherConDetails">
+                            <h2>Instagram</h2>
+                            <p onclick="location.href='https://#'">@minhajmjm</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="copyright" style="text-align: center; margin-top: 40px; color: gold;">
+                    &copy; Copyright 2025. Made by Mohamed Minhaj. All Rights Reserved.
+                </div>
+    </section>
+    <div class="loading-screen">
+        <div class="loading-animation"></div>
+        <p>Loading...</p>
+        <p style="color:#066f9c;">by <span style="color: gold;">Mohamed Minhaj</span></p>
+    </div>
+
+
+</body>
+<script src="script.js"></script>
+
+</html>
