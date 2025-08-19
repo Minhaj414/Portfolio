@@ -1319,7 +1319,7 @@ footer p {
     background: #06091a99;
     /*#06091a*/
     padding: 25px;
-    transition: all 0.5s ease;
+    transition: all 0.2s ease-in-out;
     border-radius: 20px;
     z-index: 1;
     box-shadow: 0px 0px 7px gold;
@@ -1506,7 +1506,7 @@ footer p {
 #contact,
 #project,
 #education,
-#blog{
+#blog {
     transition: margin-left 0.5s ease; /* Smooth move effect */
 }
 
